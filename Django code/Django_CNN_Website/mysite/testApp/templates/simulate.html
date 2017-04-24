@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en-us">
+    <head>
+        <title>Django Testing</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="UTF-8">
+
+        <!-- load bootstrap and fontawesome via CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css" />
+        <style>
+            html, body, input, select, textarea
+            {
+                font-size: 1.05em !important;
+            }
+        </style>
+        
+        <!-- load angular via CDN -->
+        <script src="https://code.angularjs.org/1.4.0-rc.2/angular.min.js"></script>
+        <script src="https://code.angularjs.org/1.4.0-rc.2/angular-route.min.js"></script>
+        <script src="https://code.angularjs.org/1.4.0-rc.2/angular-resource.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js"></script>
+    </head>
+    <style>
+        .center {
+            margin: auto;
+            width: 60%;
+            border: 3px solid #73AD21;
+            padding: 10px;
+        }
+</style>
+    <body>
+        <header>
+			<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="/">Big Data Project</a>
+				</div>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="/about/"><i class="fa fa-home"></i> Static Model</a></li>
+                    <li><a href="/getData/"><i class="fa fa-home"></i> Dynamic Model</a></li>
+                    <li><a href="/simulate/"><i class="fa fa-home"></i> Predict Data</a></li>
+				</ul>
+			</div>
+			</nav>
+		</header>
+        
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="well" style="width:100%; height:250px; border:1px">
+                        <div style='padding:5px;'><h4 style='text-align:center; font-weight:bold'>Browse File System</h4></div>
+                        <form class='form-inline' method='post' action='/simulateData/' enctype="multipart/form-data">
+                           <div class="fileinput fileinput-new" data-provides="fileinput">
+                               <div class="fileinput-new thumbnail" style="width: 150px; height: 100px; margin-left:400px">  
+                                    <img data-src="holder.js/100%x100%" alt="...">
+                               </div>
+                               <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 150px; max-height: 100px;margin-left:400px"></div>
+                               <div style="margin-left:400px">
+                                    <span class="btn btn-default btn-file">
+                                        <span class="fileinput-new">Select image</span>
+                                        <span class="fileinput-exists">Change</span><input type="file" name="imageName">
+                                   </span>
+                                        <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+                                </div>
+                            </div>
+                            <div style="margin-left:600px; margin-top:-110px"><button class='btn btn-primary' >Submit</button></div>
+                        </form>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="well" style="width:100%; height:150px; border:1px;">
+                        <div style='padding:1px;'><h4 style='text-align:center; font-weight:bold'>Output Panel</h4></div>
+                        <!--<img src="{% get_media_prefix %}{{file}}" />-->
+                        <div style='padding:3px;'><h2 style='text-align:center; font-weight:bold; color:blue'>{{fResult}}</h2></div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!--<div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <iframe height="200px" width="100%" id="FileFrame" name="iframe_a" srcdoc="
+                            <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' />
+                            <div style='padding:10px;'><h4 style='text-align:center; font-weight:bold'>Output Panel</h4></div>
+                            <div style='margin: auto; width: 60%;padding: 10px;'
+                            <form class='form-inline' method='post' action='/showData/'>
+                                <div class='form-group'>
+                                    <label class='sr-only'>Enter Any Keyword</label>
+                                    <p class='form-control-static'>Enter Keyword</p>
+                                <div>
+                                <div class='form-group mx-sm-3'>
+                                    <label for='keyword' class='sr-only'>Keyword</label>
+                                        <input type='text' class='form-control' id='keyword' placeholder='Keyword'>
+                                </div>
+                                <button type='submit' class='btn btn-primary'>Search</button>
+                            </form>
+                            </div>                                                              
+                    "></iframe>
+                </div>
+            </div>
+        </div> -->
+
+        <footer class="navbar navbar-default navbar-fixed-bottom">
+            <div class="container" style="margin-left:28%">
+                <div class="navbar-header">
+					<a class="navbar-brand" href="/">Team Members -: Rohit Agarwal | Hina Gandhi | Shivam Goel | Lalit Jain </a>
+				</div>
+            </div>
+        </footer>
+    </body>
+</html>

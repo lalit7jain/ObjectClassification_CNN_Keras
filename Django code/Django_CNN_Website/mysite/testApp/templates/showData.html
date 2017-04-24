@@ -38,8 +38,8 @@
 				</div>
 
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="/about/"><i class="fa fa-home"></i> Home</a></li>
-                    <li><a href="/getData/" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a></li>
+					<li><a href="/about/"><i class="fa fa-home"></i> Static Model</a></li>
+                    <li><a href="/getData/"><i class="fa fa-home"></i> Dynamic Model</a></li>
 				</ul>
 			</div>
 			</nav>
@@ -53,7 +53,6 @@
                         <div style='padding:5px;'><h4 style='text-align:center; font-weight:bold'>Search Result Panel</h4></div>
                         <div style='margin: auto; width: 60%;padding: 5px;'>
                             <h4>Search Keyword: - <span style="color:blue;font-weight:bold">{{name}}</span></h4>
-                            <h4>Search Result: - <img src="{% static '0.jpg' %}" height="70px" width="100px" /></h4>
                             
                         </div>
                 </div>
@@ -66,7 +65,10 @@
                 <div class="col-12">
                     <div class="well" style="width:100%; height:200px; border:1px">
                         <div style='padding:5px;'><h4 style='text-align:center; font-weight:bold'>Output Panel</h4></div>
-                        
+                        <div style='margin: auto; width: 60%;padding: 5px;'>
+                            <h4>Result - <span style="color:blue;font-weight:bold">{{train}}</span></h4>
+                            <h4>Click to Predict - <span style="color:blue;font-weight:bold"><a href="/simulate/"><i class="fa fa-home"></i> Predict Data</a></span></h4>
+                        </div>
                 </div>
             </div>
         </div>
@@ -96,9 +98,9 @@
         </div> -->
 
         <footer class="navbar navbar-default navbar-fixed-bottom">
-            <div class="container">
+            <div class="container" style="margin-left:28%">
                 <div class="navbar-header">
-					<a class="navbar-brand" href="/">Team Members</a>
+					<a class="navbar-brand" href="/">Team Members -: Rohit Agarwal | Hina Gandhi | Shivam Goel | Lalit Jain </a>
 				</div>
             </div>
         </footer>
