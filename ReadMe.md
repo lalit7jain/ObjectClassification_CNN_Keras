@@ -14,8 +14,7 @@
 
 - Clone the Repository to System.[Github link](https://github.com/Lalit7Jain/ObjectClassification_CNN_Keras)
 - Create Google API key[Google Api Key](https://console.developers.google.com/apis/dashboard?project=final-project-152101)
-- Create Gpu Instance Using Amazon Aws Service and Install Django and related libraries to run Python
-[Link of Document for Reference](https://github.com/Lalit7Jain/ObjectClassification_CNN_Keras/Document/Setup for running code.docx)
+- Create Gpu Instance Using Amazon Aws Service and Install Django and related libraries to run Python [Link of Document for Reference](https://github.com/Lalit7Jain/ObjectClassification_CNN_Keras/blob/master/Document/Steps%20for%20running%20code.docx)
 - SCP the Django files with name mysite  in an AWS GPU Instance under directory '/home/Ubuntu'
 > Run the Server using below command
 ```
