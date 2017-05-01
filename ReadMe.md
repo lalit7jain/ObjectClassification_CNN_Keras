@@ -1,6 +1,4 @@
 
-## Final Exam - Spring 2017
-
 ## Contributors
 - Lalit Jain https://www.linkedin.com/in/lalit7jain/ 
 - Rohit Agarwal https://www.linkedin.com/in/rohitag04/ 
